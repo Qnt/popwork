@@ -1,3 +1,9 @@
+import Hero from "./_components/hero";
+
 export default function Home() {
-  return <div>Mains</div>;
+  return (
+    <main className="flex flex-col">
+      <Hero />
+    </main>
+  );
 }
