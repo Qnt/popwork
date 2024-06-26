@@ -1,5 +1,7 @@
 import arrowDown from "@/app/assets/arrow-down.svg";
+import featuresWave from "@/app/assets/features-wave.svg";
 import kipli from "@/app/assets/kipli.png";
+import manMage from "@/app/assets/man-mage-emoji.png";
 import memoji1 from "@/app/assets/memoji-1.png";
 import memoji2 from "@/app/assets/memoji-2.png";
 import memoji3 from "@/app/assets/memoji-3.png";
@@ -15,8 +17,12 @@ import screenshot5 from "@/app/assets/screenshot-5.png";
 import screenshot6 from "@/app/assets/screenshot-6.png";
 import screenshot7 from "@/app/assets/screenshot-7.png";
 import screenshot8 from "@/app/assets/screenshot-8.png";
+import teamWave from "@/app/assets/team-wave.svg";
+import technologist from "@/app/assets/technologist-emoji.png";
 import toGoodToGo from "@/app/assets/to-good-to-go.png";
 import welcomeToTheJungle from "@/app/assets/welcome-to-the-jungle.png";
+import womanElf from "@/app/assets/woman-elf-emoji.png";
+import womanSupervillain from "@/app/assets/woman-supervillain-emoji.png";
 import Image from "next/image";
 import Header from "./_components/header";
 
@@ -32,7 +38,7 @@ const companies = [
 export default function Home() {
   return (
     <main className="flex flex-col">
-      <section className="flex flex-col items-center justify-center bg-hero-pattern bg-cover bg-no-repeat">
+      <section className="flex flex-col items-center justify-center bg-hero-pattern bg-cover bg-[50%_100%] bg-no-repeat">
         <Header />
         <div className="flex flex-col items-center justify-center text-center">
           <h1 className="mt-[72px] w-[969px] text-6xl font-bold leading-[72px] tracking-[0.8px]">
@@ -97,140 +103,200 @@ export default function Home() {
           />
         </div>
       </section>
-      <section className="bg-pattern flex flex-col items-center bg-contain bg-[center_96%] bg-no-repeat pt-16 text-[58px] font-bold leading-[68px] tracking-[1.2px]">
-        <div className="flex w-[1120px] flex-col items-center">
-          <div className="flex gap-14">
-            <p>
-              Take your{" "}
-              <span className="bg-accent1 inline-flex h-[55px] items-center">
-                team
-              </span>{" "}
-              <span className="bg-accent1 inline-flex h-[55px] items-center">
-                management
-              </span>{" "}
-              to the next level with well prepared 1-to-1{" "}
-              <span className="bg-accent1 inline-flex h-[55px] items-center">
-                meetings
-              </span>
-            </p>
-            <div className="ml-20 flex min-w-[548px] grow flex-col items-center">
+      <section className="flex flex-col items-center text-[58px] font-bold leading-[68px] tracking-[1.2px]">
+        <div className="flex gap-14 px-40 pt-16">
+          <p>
+            Take your{" "}
+            <span className="bg-accent1 inline-flex h-[55px] items-center">
+              team
+            </span>{" "}
+            <span className="bg-accent1 inline-flex h-[55px] items-center">
+              management
+            </span>{" "}
+            to the next level with well prepared 1-to-1{" "}
+            <span className="bg-accent1 inline-flex h-[55px] items-center">
+              meetings
+            </span>
+          </p>
+          <div className="ml-20 flex min-w-[548px] grow flex-col items-center">
+            <Image
+              src={screenshot1}
+              alt="screenshot1"
+              className="shadow-[0px_4px_16px_0px_#673F1833]"
+            />
+            <div className="relative">
               <Image
-                src={screenshot1}
-                alt="screenshot1"
-                className="shadow-[0px_4px_16px_0px_#673F1833]"
+                src={screenshot2}
+                alt="screenshot2"
+                className="mt-6 rounded-2xl shadow-[0px_4px_16px_0px_#673F1833]"
               />
-              <div className="relative">
-                <Image
-                  src={screenshot2}
-                  alt="screenshot2"
-                  className="mt-6 rounded-2xl shadow-[0px_4px_16px_0px_#673F1833]"
-                />
-                <Image
-                  src={screenshot3}
-                  alt="screenshot3"
-                  className="absolute -left-20 top-[60%] rounded-2xl shadow-[0px_4px_16px_0px_#673F1833]"
-                />
+              <Image
+                src={screenshot3}
+                alt="screenshot3"
+                className="absolute -left-20 top-[60%] rounded-2xl shadow-[0px_4px_16px_0px_#673F1833]"
+              />
+            </div>
+            <div className="relative mt-[122px]">
+              <div className="w-[400px] rounded-l-2xl rounded-br-[4px] rounded-tr-2xl bg-primary pb-[15px] pl-4 pr-[42px] pt-[17px] shadow-[0px_4px_16px_0px_#9A5E2426]">
+                <p className="text-base font-normal leading-[22px] tracking-normal text-white">
+                  5 questions every week: your team members take 10 minutes to
+                  check in with you.
+                </p>
               </div>
-              <div className="relative mt-[122px]">
-                <div className="w-[400px] rounded-l-2xl rounded-br-[4px] rounded-tr-2xl bg-primary pb-[15px] pl-4 pr-[42px] pt-[17px] shadow-[0px_4px_16px_0px_#9A5E2426]">
-                  <p className="text-base font-normal leading-[22px] tracking-normal text-white">
-                    5 questions every week: your team members take 10 minutes to
-                    check in with you.
-                  </p>
-                </div>
-                <Image
-                  src={memoji2}
-                  alt="memoji2"
-                  className="absolute right-[-90px] top-[26px]"
-                />
-              </div>
+              <Image
+                src={memoji2}
+                alt="memoji2"
+                className="absolute right-[-90px] top-[26px]"
+              />
             </div>
           </div>
-          <div className="mt-[180px] flex gap-14">
-            <div className="mr-[65px] min-w-[548px] flex-col">
-              <div className="relative">
-                <Image
-                  src={screenshot4}
-                  alt="screenshot4"
-                  className="w-[468px] rounded-2xl shadow-[0px_4px_16px_0px_#673F1833]"
-                />
-                <Image
-                  src={screenshot5}
-                  alt="screenshot5"
-                  className="absolute bottom-[-3px] left-[65px] rounded-2xl shadow-[0px_4px_16px_0px_#673F1833]"
-                />
-              </div>
-              <div className="relative ml-[62px] mt-6">
-                <div className="w-[400px] rounded-r-2xl rounded-bl-[4px] rounded-tl-2xl bg-primary pb-[15px] pl-4 pr-[44px] pt-[17px] shadow-[0px_4px_16px_0px_#9A5E2426]">
-                  <p className="text-base font-normal leading-[22px] tracking-normal text-white">
-                    Mood, achievements, priorities, challenges, topics for
-                    discussion: Popwork’s workspace includes it all.
-                  </p>
-                </div>
-                <Image
-                  src={memoji3}
-                  alt="memoji3"
-                  className="absolute left-[-90px] top-[58px]"
-                />
-              </div>
+        </div>
+        <div className="flex gap-14 px-40 pt-[180px]">
+          <div className="mr-[65px] min-w-[548px] flex-col">
+            <div className="relative">
+              <Image
+                src={screenshot4}
+                alt="screenshot4"
+                className="w-[468px] rounded-2xl shadow-[0px_4px_16px_0px_#673F1833]"
+              />
+              <Image
+                src={screenshot5}
+                alt="screenshot5"
+                className="absolute bottom-[-3px] left-[65px] rounded-2xl shadow-[0px_4px_16px_0px_#673F1833]"
+              />
             </div>
-            <p className="mt-[114px]">
-              Focus on the{" "}
-              <span className="bg-accent2 inline-flex h-[55px] items-center">
-                right topics
-              </span>{" "}
-              and regularly share{" "}
-              <span className="bg-accent2 inline-flex h-[55px] items-center">
-                feedback
-              </span>{" "}
-              with each team member
-            </p>
+            <div className="relative ml-[62px] mt-6">
+              <div className="w-[400px] rounded-r-2xl rounded-bl-[4px] rounded-tl-2xl bg-primary pb-[15px] pl-4 pr-[44px] pt-[17px] shadow-[0px_4px_16px_0px_#9A5E2426]">
+                <p className="text-base font-normal leading-[22px] tracking-normal text-white">
+                  Mood, achievements, priorities, challenges, topics for
+                  discussion: Popwork’s workspace includes it all.
+                </p>
+              </div>
+              <Image
+                src={memoji3}
+                alt="memoji3"
+                className="absolute left-[-90px] top-[58px]"
+              />
+            </div>
           </div>
-          <div className="mt-[260px] flex gap-14">
-            <p>
-              Turn your conversations{" "}
-              <span className="bg-accent3 inline-flex h-[55px] items-center">
-                into actions
-              </span>{" "}
-              and make your team move{" "}
-              <span className="bg-accent3 inline-flex h-[55px] items-center">
-                forward week
-              </span>
-              <span className="bg-accent3 inline-flex h-[55px] items-center">
+          <p className="mt-[114px]">
+            Focus on the{" "}
+            <span className="bg-accent2 inline-flex h-[55px] items-center">
+              right topics
+            </span>{" "}
+            and regularly share{" "}
+            <span className="bg-accent2 inline-flex h-[55px] items-center">
+              feedback
+            </span>{" "}
+            with each team member
+          </p>
+        </div>
+        <div className="relative flex gap-14 px-40 pb-[140px] pt-[260px]">
+          <p>
+            Turn your conversations{" "}
+            <span className="bg-accent3 inline-flex h-[55px] items-center">
+              into actions
+            </span>{" "}
+            and make your team move{" "}
+            <span className="bg-accent3 inline-flex h-[55px] items-center">
+              forward week
+            </span>
+            <span className="bg-accent3 inline-flex h-[55px] items-center">
+              after week
+            </span>
+          </p>
+          <div className="relative flex min-w-[651px] flex-col gap-3">
+            <div className="absolute right-[97px] top-[-78px]">
+              <div className="w-[400px] rounded-l-2xl rounded-br-[4px] rounded-tr-2xl bg-primary pb-[15px] pl-4 pr-6 pt-[17px] shadow-[0px_4px_16px_0px_#9A5E2426]">
+                <p className="text-base font-normal leading-[22px] tracking-normal text-white">
+                  Never forget something again! Discussions are followed up on
+                  and topics move forward with Popwork.
+                </p>
+              </div>
+              <Image
+                src={memoji4}
+                alt="memoji4"
+                className="absolute right-[-90px] top-[48px]"
+              />
+            </div>
+            <Image
+              src={screenshot6}
+              alt="screenshot6"
+              className="rounded-2xl shadow-[0px_4px_16px_0px_#673F1833]"
+            />
+            <Image
+              src={screenshot7}
+              alt="screenshot7"
+              className="rounded-2xl shadow-[0px_4px_16px_0px_#673F1833]"
+            />
+            <Image
+              src={screenshot8}
+              alt="screenshot7"
+              className="rounded-2xl shadow-[0px_4px_16px_0px_#673F1833]"
+            />
+          </div>
+          <Image
+            src={featuresWave}
+            alt="featuresWave"
+            objectFit="cover"
+            className="leeft-0 absolute bottom-[10%] right-0 -z-50 w-full object-cover"
+          />
+        </div>
+      </section>
+      <section className="relative h-[510px] w-full bg-primary text-white">
+        <div className="flex flex-col items-center gap-[44px] px-40 pb-20 pt-10">
+          <h2 className="text-[2.5rem] leading-normal tracking-[0.6px]">
+            Is Popwork right for my team ?
+          </h2>
+          <div className="flex gap-12 text-base font-normal">
+            <div className="flex flex-col items-center text-center">
+              <Image src={womanElf} alt="womanElf" width={100} />
+              <p>C-Levels</p>
+              <p className="mt-[18px]">
+                Create the conditions needed for effective management at all
+                levels of the company
+              </p>
+            </div>
+            <div className="flex flex-col items-center text-center">
+              <Image src={manMage} alt="manMage" width={100} />
+              <p>Senior managers</p>
+              <p className="mt-[18px]">
+                Gain time and boost your team’s performance and engagement week
                 after week
-              </span>
-            </p>
-            <div className="relative flex min-w-[651px] flex-col gap-3">
-              <div className="absolute right-[97px] top-[-78px]">
-                <div className="w-[400px] rounded-l-2xl rounded-br-[4px] rounded-tr-2xl bg-primary pb-[15px] pl-4 pr-6 pt-[17px] shadow-[0px_4px_16px_0px_#9A5E2426]">
-                  <p className="text-base font-normal leading-[22px] tracking-normal text-white">
-                    Never forget something again! Discussions are followed up on
-                    and topics move forward with Popwork.
-                  </p>
-                </div>
-                <Image
-                  src={memoji4}
-                  alt="memoji4"
-                  className="absolute right-[-90px] top-[48px]"
-                />
-              </div>
+              </p>
+            </div>
+            <div className="flex flex-col items-center text-center">
               <Image
-                src={screenshot6}
-                alt="screenshot6"
-                className="rounded-2xl shadow-[0px_4px_16px_0px_#673F1833]"
+                src={womanSupervillain}
+                alt="womanSupervillain"
+                width={100}
               />
-              <Image
-                src={screenshot7}
-                alt="screenshot7"
-                className="rounded-2xl shadow-[0px_4px_16px_0px_#673F1833]"
-              />
-              <Image
-                src={screenshot8}
-                alt="screenshot7"
-                className="rounded-2xl shadow-[0px_4px_16px_0px_#673F1833]"
-              />
+              <p>Junior managers</p>
+              <p className="mt-[18px]">
+                Start off on the right foot and rely on a simple and proven
+                management framework
+              </p>
+            </div>
+            <div className="flex flex-col items-center text-center">
+              <Image src={technologist} alt="technologist" width={100} />
+              <p>Remote managers</p>
+              <p className="mt-[18px]">
+                Maintain close contact with your team remotely while developing
+                autonomy
+              </p>
             </div>
           </div>
+        </div>
+        <Image
+          src={teamWave}
+          alt="pattern"
+          objectFit="cover"
+          className="absolute bottom-[-1px] w-full object-cover"
+        />
+      </section>
+      <section>
+        <div className="pt-20">
+          <h1>Popwork is a game changer for teams</h1>
         </div>
       </section>
     </main>

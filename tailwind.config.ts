@@ -16,7 +16,6 @@ const config: Config = {
       },
       backgroundImage: {
         "hero-pattern": "url('@/app/assets/hero-pattern.svg')",
-        pattern: "url('@/app/assets/pattern.svg')",
       },
     },
   },
