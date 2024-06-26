@@ -10,9 +10,13 @@ const config: Config = {
     extend: {
       colors: {
         primary: "#111111",
+        accent1: "#EFDFFD",
+        accent2: "#E5FFC7",
+        accent3: "#FDE49B",
       },
       backgroundImage: {
         "hero-pattern": "url('@/app/assets/hero-pattern.svg')",
+        pattern: "url('@/app/assets/pattern.svg')",
       },
     },
   },
