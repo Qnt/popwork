@@ -9,6 +9,7 @@ import memoji4 from "@/app/assets/memoji-4.png";
 import moodz from "@/app/assets/moodz.png";
 import payfit from "@/app/assets/payfit.png";
 import prestashop from "@/app/assets/prestashop.png";
+import antoineLoredo from "@/app/assets/reviewers/antoine-loredo.png";
 import screenshot1 from "@/app/assets/screenshot-1.png";
 import screenshot2 from "@/app/assets/screenshot-2.png";
 import screenshot3 from "@/app/assets/screenshot-3.png";
@@ -25,6 +26,7 @@ import womanElf from "@/app/assets/woman-elf-emoji.png";
 import womanSupervillain from "@/app/assets/woman-supervillain-emoji.png";
 import Image from "next/image";
 import Header from "./_components/header";
+import ReviewCard from "./_components/review-card";
 
 const companies = [
   welcomeToTheJungle,
@@ -107,14 +109,14 @@ export default function Home() {
         <div className="flex gap-14 px-40 pt-16">
           <p>
             Take your{" "}
-            <span className="bg-accent1 inline-flex h-[55px] items-center">
+            <span className="inline-flex h-[55px] items-center bg-accent1">
               team
             </span>{" "}
-            <span className="bg-accent1 inline-flex h-[55px] items-center">
+            <span className="inline-flex h-[55px] items-center bg-accent1">
               management
             </span>{" "}
             to the next level with well prepared 1-to-1{" "}
-            <span className="bg-accent1 inline-flex h-[55px] items-center">
+            <span className="inline-flex h-[55px] items-center bg-accent1">
               meetings
             </span>
           </p>
@@ -181,11 +183,11 @@ export default function Home() {
           </div>
           <p className="mt-[114px]">
             Focus on the{" "}
-            <span className="bg-accent2 inline-flex h-[55px] items-center">
+            <span className="inline-flex h-[55px] items-center bg-accent2">
               right topics
             </span>{" "}
             and regularly share{" "}
-            <span className="bg-accent2 inline-flex h-[55px] items-center">
+            <span className="inline-flex h-[55px] items-center bg-accent2">
               feedback
             </span>{" "}
             with each team member
@@ -194,14 +196,14 @@ export default function Home() {
         <div className="relative flex gap-14 px-40 pb-[140px] pt-[260px]">
           <p>
             Turn your conversations{" "}
-            <span className="bg-accent3 inline-flex h-[55px] items-center">
+            <span className="inline-flex h-[55px] items-center bg-accent3">
               into actions
             </span>{" "}
             and make your team move{" "}
-            <span className="bg-accent3 inline-flex h-[55px] items-center">
+            <span className="inline-flex h-[55px] items-center bg-accent3">
               forward week
             </span>
-            <span className="bg-accent3 inline-flex h-[55px] items-center">
+            <span className="inline-flex h-[55px] items-center bg-accent3">
               after week
             </span>
           </p>
@@ -296,7 +298,71 @@ export default function Home() {
       </section>
       <section>
         <div className="pt-20">
-          <h1>Popwork is a game changer for teams</h1>
+          <h1 className="text-center text-[2.5rem] leading-tight tracking-[0.6px]">
+            Popwork is a game changer for teams
+          </h1>
+          <div className="mt-[50px] flex w-full gap-4 overflow-x-hidden">
+            <ReviewCard
+              props={{
+                reviewerName: "Antoine Loredo",
+                reviewText:
+                  "After a few weeks, I can’t imagine managing my team without Popwork.",
+                companyLogo: kipli,
+                reviewerPosition: "Manager",
+                reviewerAvatar: antoineLoredo,
+              }}
+            />
+            <ReviewCard
+              props={{
+                reviewerName: "Antoine Loredo",
+                reviewText:
+                  "After a few weeks, I can’t imagine managing my team without Popwork.",
+                companyLogo: kipli,
+                reviewerPosition: "Manager",
+                reviewerAvatar: antoineLoredo,
+              }}
+            />
+            <ReviewCard
+              props={{
+                reviewerName: "Antoine Loredo",
+                reviewText:
+                  "After a few weeks, I can’t imagine managing my team without Popwork.",
+                companyLogo: kipli,
+                reviewerPosition: "Manager",
+                reviewerAvatar: antoineLoredo,
+              }}
+            />
+            <ReviewCard
+              props={{
+                reviewerName: "Antoine Loredo",
+                reviewText:
+                  "After a few weeks, I can’t imagine managing my team without Popwork.",
+                companyLogo: kipli,
+                reviewerPosition: "Manager",
+                reviewerAvatar: antoineLoredo,
+              }}
+            />
+            <ReviewCard
+              props={{
+                reviewerName: "Antoine Loredo",
+                reviewText:
+                  "After a few weeks, I can’t imagine managing my team without Popwork.",
+                companyLogo: kipli,
+                reviewerPosition: "Manager",
+                reviewerAvatar: antoineLoredo,
+              }}
+            />
+            <ReviewCard
+              props={{
+                reviewerName: "Antoine Loredo",
+                reviewText:
+                  "After a few weeks, I can’t imagine managing my team without Popwork.",
+                companyLogo: kipli,
+                reviewerPosition: "Manager",
+                reviewerAvatar: antoineLoredo,
+              }}
+            />
+          </div>
         </div>
       </section>
     </main>
