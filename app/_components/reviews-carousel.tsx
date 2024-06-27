@@ -160,19 +160,19 @@ const reviews = [
 
 export default function ReviewsCarousel() {
   return (
-    <div className="mt-[50px] w-full overflow-hidden">
-      <div className="flex animate-ticker flex-col gap-8">
-        <div className="flex gap-4">
+    <div className="w-full overflow-hidden">
+      <div className="flex animate-ticker flex-col gap-8 py-[50px]">
+        <div className="flex w-fit gap-4">
           {[...reviews[0], ...reviews[0]].map((review, i) => (
             <ReviewCard key={review.reviewerName + i} props={review} />
           ))}
         </div>
-        <div className="flex -translate-x-32 gap-4">
+        <div className="flex w-fit -translate-x-32 gap-4">
           {[...reviews[1], ...reviews[1]].map((review, i) => (
             <ReviewCard key={review.reviewerName + i} props={review} />
           ))}
         </div>
-        <div className="flex gap-4">
+        <div className="flex w-fit gap-4">
           {[...reviews[2], ...reviews[2]].map((review, i) => (
             <ReviewCard key={review.reviewerName + i} props={review} />
           ))}

@@ -15,8 +15,12 @@ const config: Config = {
         accent2: "#E5FFC7",
         accent3: "#FDE49B",
       },
+      boxShadow: {
+        card: "0px 4px 16px 0px #673F1833",
+        message: "0px 4px 16px 0px #9A5E2426",
+      },
       backgroundImage: {
-        "hero-pattern": "url('@/app/assets/hero-pattern.svg')",
+        "hero-pattern": "url('@/app/assets/patterns/hero-pattern.svg')",
       },
       keyframes: {
         ticker: {

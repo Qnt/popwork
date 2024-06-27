@@ -15,7 +15,11 @@ export default function ReviewCard({ props }: { props: ReviewCcardProps }) {
       <div className="flex h-full flex-col justify-between">
         <div className="flex flex-col gap-3">
           <div className="flex justify-between">
-            <Image src={props.companyLogo} alt="companyLogo" height={25} />
+            <Image
+              src={props.companyLogo}
+              alt="companyLogo"
+              className="h-[25px] w-auto"
+            />
             <p className="text-xs text-secondary/60">
               {props.reviewerPosition}
             </p>
@@ -27,6 +31,7 @@ export default function ReviewCard({ props }: { props: ReviewCcardProps }) {
               alt="reviewerAvatar"
               width={56}
               height={56}
+              className="h-14 w-14"
             />
           </div>
         </div>
