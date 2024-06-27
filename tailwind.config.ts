@@ -18,6 +18,19 @@ const config: Config = {
       backgroundImage: {
         "hero-pattern": "url('@/app/assets/hero-pattern.svg')",
       },
+      keyframes: {
+        ticker: {
+          "0%": {
+            transform: "translateX(0)",
+          },
+          "100%": {
+            transform: "translateX(calc((487px + 1rem) * -5))",
+          },
+        },
+      },
+      animation: {
+        ticker: "ticker 25s linear infinite",
+      },
     },
   },
   plugins: [],

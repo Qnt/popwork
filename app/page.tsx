@@ -1,15 +1,15 @@
+import Image from "next/image";
+
+import Header from "./_components/header";
+import ReviewsCarousel from "./_components/reviews-carousel";
+
 import arrowDown from "@/app/assets/arrow-down.svg";
 import featuresWave from "@/app/assets/features-wave.svg";
-import kipli from "@/app/assets/kipli.png";
 import manMage from "@/app/assets/man-mage-emoji.png";
 import memoji1 from "@/app/assets/memoji-1.png";
 import memoji2 from "@/app/assets/memoji-2.png";
 import memoji3 from "@/app/assets/memoji-3.png";
 import memoji4 from "@/app/assets/memoji-4.png";
-import moodz from "@/app/assets/moodz.png";
-import payfit from "@/app/assets/payfit.png";
-import prestashop from "@/app/assets/prestashop.png";
-import antoineLoredo from "@/app/assets/reviewers/antoine-loredo.png";
 import screenshot1 from "@/app/assets/screenshot-1.png";
 import screenshot2 from "@/app/assets/screenshot-2.png";
 import screenshot3 from "@/app/assets/screenshot-3.png";
@@ -20,22 +20,15 @@ import screenshot7 from "@/app/assets/screenshot-7.png";
 import screenshot8 from "@/app/assets/screenshot-8.png";
 import teamWave from "@/app/assets/team-wave.svg";
 import technologist from "@/app/assets/technologist-emoji.png";
-import toGoodToGo from "@/app/assets/to-good-to-go.png";
-import welcomeToTheJungle from "@/app/assets/welcome-to-the-jungle.png";
 import womanElf from "@/app/assets/woman-elf-emoji.png";
 import womanSupervillain from "@/app/assets/woman-supervillain-emoji.png";
-import Image from "next/image";
-import Header from "./_components/header";
-import ReviewCard from "./_components/review-card";
 
-const companies = [
-  welcomeToTheJungle,
-  moodz,
-  kipli,
-  payfit,
-  prestashop,
-  toGoodToGo,
-];
+import kipli from "@/app/assets/companies/kipli.png";
+import moodz from "@/app/assets/companies/moodz.png";
+import payfit from "@/app/assets/companies/payfit.png";
+import prestashop from "@/app/assets/companies/prestashop.png";
+import toGoodToGo from "@/app/assets/companies/to-good-to-go.png";
+import welcomeToTheJungle from "@/app/assets/companies/welcome-to-the-jungle.png";
 
 export default function Home() {
   return (
@@ -77,9 +70,16 @@ export default function Home() {
         </div>
         <div className="mt-16 flex w-[800px] flex-col items-center">
           <div className="flex items-center gap-8 pt-4">
-            {companies.map((company, i) => (
-              <Image key={i} src={company} alt="company" objectFit="contain" />
-            ))}
+            <Image
+              src={welcomeToTheJungle}
+              alt="Welcome to the jungle"
+              objectFit="contain"
+            />
+            <Image src={moodz} alt="Moodz" objectFit="contain" />
+            <Image src={kipli} alt="Kipli" objectFit="contain" />
+            <Image src={payfit} alt="Payfit" objectFit="contain" />
+            <Image src={prestashop} alt="Prestashop" objectFit="contain" />
+            <Image src={toGoodToGo} alt="To Good to Go" objectFit="contain" />
           </div>
           <p className="mt-4 text-lg leading-[22px]">
             Their teams and hundreds more are using Popwork - in person or
@@ -301,68 +301,7 @@ export default function Home() {
           <h1 className="text-center text-[2.5rem] leading-tight tracking-[0.6px]">
             Popwork is a game changer for teams
           </h1>
-          <div className="mt-[50px] flex w-full gap-4 overflow-x-hidden">
-            <ReviewCard
-              props={{
-                reviewerName: "Antoine Loredo",
-                reviewText:
-                  "After a few weeks, I can’t imagine managing my team without Popwork.",
-                companyLogo: kipli,
-                reviewerPosition: "Manager",
-                reviewerAvatar: antoineLoredo,
-              }}
-            />
-            <ReviewCard
-              props={{
-                reviewerName: "Antoine Loredo",
-                reviewText:
-                  "After a few weeks, I can’t imagine managing my team without Popwork.",
-                companyLogo: kipli,
-                reviewerPosition: "Manager",
-                reviewerAvatar: antoineLoredo,
-              }}
-            />
-            <ReviewCard
-              props={{
-                reviewerName: "Antoine Loredo",
-                reviewText:
-                  "After a few weeks, I can’t imagine managing my team without Popwork.",
-                companyLogo: kipli,
-                reviewerPosition: "Manager",
-                reviewerAvatar: antoineLoredo,
-              }}
-            />
-            <ReviewCard
-              props={{
-                reviewerName: "Antoine Loredo",
-                reviewText:
-                  "After a few weeks, I can’t imagine managing my team without Popwork.",
-                companyLogo: kipli,
-                reviewerPosition: "Manager",
-                reviewerAvatar: antoineLoredo,
-              }}
-            />
-            <ReviewCard
-              props={{
-                reviewerName: "Antoine Loredo",
-                reviewText:
-                  "After a few weeks, I can’t imagine managing my team without Popwork.",
-                companyLogo: kipli,
-                reviewerPosition: "Manager",
-                reviewerAvatar: antoineLoredo,
-              }}
-            />
-            <ReviewCard
-              props={{
-                reviewerName: "Antoine Loredo",
-                reviewText:
-                  "After a few weeks, I can’t imagine managing my team without Popwork.",
-                companyLogo: kipli,
-                reviewerPosition: "Manager",
-                reviewerAvatar: antoineLoredo,
-              }}
-            />
-          </div>
+          <ReviewsCarousel />
         </div>
       </section>
     </main>

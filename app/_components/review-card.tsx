@@ -1,21 +1,21 @@
 import Image, { StaticImageData } from "next/image";
 import ReviewCardWraper from "./ui/review-card-wrapper";
 
-type ReviewCardProps = {
-  companyLogo: StaticImageData;
-  reviewerAvatar: StaticImageData;
-  reviewerPosition: string;
+type ReviewCcardProps = {
   reviewerName: string;
   reviewText: string;
+  companyLogo: StaticImageData;
+  reviewerPosition: string;
+  reviewerAvatar: StaticImageData;
 };
 
-export default function ReviewCard({ props }: { props: ReviewCardProps }) {
+export default function ReviewCard({ props }: { props: ReviewCcardProps }) {
   return (
     <ReviewCardWraper>
       <div className="flex h-full flex-col justify-between">
         <div className="flex flex-col gap-3">
           <div className="flex justify-between">
-            <Image src={props.companyLogo} alt="companyLogo" />
+            <Image src={props.companyLogo} alt="companyLogo" height={25} />
             <p className="text-xs text-secondary/60">
               {props.reviewerPosition}
             </p>
