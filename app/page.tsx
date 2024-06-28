@@ -281,15 +281,15 @@ export default function Home() {
         />
       </section>
       <section>
-        <div className="pt-20">
+        <div className="pb-10 pt-20">
           <h1 className="text-center text-[2.5rem] leading-tight tracking-wider">
             Popwork is a game changer for teams
           </h1>
           <ReviewsCarousel />
         </div>
       </section>
-      <section className="py-[122px]">
-        <div className="relative flex items-center gap-[60px] px-[220px]">
+      <section className="relative py-20">
+        <div className="mx-auto flex w-[1000px] items-center gap-[60px]">
           <div className="flex min-w-[470px] flex-col items-center rounded-2xl bg-white shadow-[0px_0px_50px_0px_#673F1833]">
             <div className="flex w-3/5 flex-col pt-8 text-center">
               <p className="tracking-wider">Team</p>
@@ -370,12 +370,12 @@ export default function Home() {
               />
             </div>
           </div>
-          <Image
-            src={pricingWave}
-            alt="pricingWave"
-            className="absolute bottom-4 left-0 right-0 -z-50 w-full object-cover"
-          />
         </div>
+        <Image
+          src={pricingWave}
+          alt="pricingWave"
+          className="absolute bottom-24 left-0 right-0 -z-50 w-full object-cover"
+        />
       </section>
     </main>
   );
