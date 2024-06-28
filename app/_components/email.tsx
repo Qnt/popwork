@@ -6,7 +6,7 @@ export default function Email({
   const bgColor = variant === "light" ? "bg-white/85" : "bg-white/40";
   const textColor = variant === "light" ? "text-primary" : "text-white";
   return (
-    <form className="w-[400px]">
+    <form className="min-w-[400px]">
       <label htmlFor="email" className="sr-only">
         Email
       </label>
