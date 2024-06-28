@@ -15,7 +15,10 @@ import ninja from "@/app/assets/emojis/ninja-emoji.png";
 import victoryHand from "@/app/assets/emojis/victory-hand-emoji.png";
 import womanBiking from "@/app/assets/emojis/woman-biking-emoji.png";
 
+import emailBottomWave from "@/app/assets/patterns/email-bottom-wave.svg";
 import featuresWave from "@/app/assets/patterns/features-wave.svg";
+import futureWave1 from "@/app/assets/patterns/future-wave-1.svg";
+import futureWave2 from "@/app/assets/patterns/future-wave-2.svg";
 import pricingWave from "@/app/assets/patterns/pricing-wave.svg";
 import teamWave from "@/app/assets/patterns/team-wave.svg";
 
@@ -24,6 +27,7 @@ import memoji2 from "@/app/assets/memoji-2.png";
 import memoji3 from "@/app/assets/memoji-3.png";
 import memoji4 from "@/app/assets/memoji-4.png";
 import memoji5 from "@/app/assets/memoji-5.png";
+import memoji6 from "@/app/assets/memoji-6.png";
 import screenshot1 from "@/app/assets/screenshot-1.png";
 import screenshot2 from "@/app/assets/screenshot-2.png";
 import screenshot3 from "@/app/assets/screenshot-3.png";
@@ -32,6 +36,8 @@ import screenshot5 from "@/app/assets/screenshot-5.png";
 import screenshot6 from "@/app/assets/screenshot-6.png";
 import screenshot7 from "@/app/assets/screenshot-7.png";
 import screenshot8 from "@/app/assets/screenshot-8.png";
+import managementPlaybook from "@/app/assets/the-management-playbook.png";
+import questionGuide from "@/app/assets/the-ultimate-question-guide.png";
 
 import kipli from "@/app/assets/companies/kipli.png";
 import moodz from "@/app/assets/companies/moodz.png";
@@ -376,6 +382,93 @@ export default function Home() {
           alt="pricingWave"
           className="absolute bottom-24 left-0 right-0 -z-50 w-full object-cover"
         />
+      </section>
+      <section className="relative">
+        <div className="mx-auto w-[1000px] text-pretty">
+          <h2 className="text-center text-[58px] leading-[68px] tracking-[1.2px]">
+            The future of management
+          </h2>
+          <div className="mt-10 text-[26px] leading-9">
+            <p>
+              At Popwork, we believe there is a{" "}
+              <span className="bg-accent1">better way to manage people.</span>
+            </p>
+            <p className="mt-[39px]">
+              Management is the very foundation of every organisation, impacting
+              the way we perform and find purpose at work.
+            </p>
+            <p className="mt-[29px]">
+              Yet for too long,{" "}
+              <span className="bg-accent2">managers have been left alone</span>{" "}
+              and lack support to manage their teams.
+            </p>
+            <p className="mt-[35px]">
+              <span className="bg-accent1">
+                Popwork is the first tool that helps managers and team members
+                work better together - week after week.
+              </span>{" "}
+              Designed by and for teams, Popwork immediately fits into your
+              day-to-day.
+            </p>
+            <p className="mt-[40px]">
+              <span className="bg-accent1">
+                Choosing Popwork is choosing to improve the way your team works.
+              </span>
+            </p>
+          </div>
+          <div className="mt-20 flex items-start gap-16 px-24">
+            <div className="relative pt-16">
+              <div className="w-[400px] max-w-80 rounded-r-2xl rounded-bl-[4px] rounded-tl-2xl bg-primary px-4 pb-[15px] pt-[17px] font-normal leading-[22px] tracking-normal text-white shadow-message">
+                <p>
+                  Discover Popwork&apos;s resources on management. No big
+                  theories, only best practices and actionable tips based on the
+                  experience of hundreds of managers.
+                </p>
+                <p className="mt-5">Already thousands of downloads.</p>
+              </div>
+              <Image
+                src={memoji6}
+                alt="memoji6"
+                className="absolute bottom-[-60px] left-[-90px]"
+              />
+            </div>
+            <div className="flex gap-4 text-center">
+              <div>
+                <Image src={questionGuide} alt="questionGuide" />
+                <p>Download</p>
+              </div>
+              <div>
+                <Image src={managementPlaybook} alt="managementPlaybook" />
+                <p>Download</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <Image
+          src={futureWave1}
+          alt="futureWave1"
+          className="absolute left-0 right-0 top-0 -z-50 w-full object-cover"
+        />
+        <Image
+          src={futureWave2}
+          alt="futureWave2"
+          className="absolute -bottom-20 left-0 right-0 -z-40 w-full object-cover"
+        />
+      </section>
+      <section className="relative mt-16 bg-primary">
+        <Image
+          src={emailBottomWave}
+          alt="emailBottomWave"
+          className="absolute left-0 right-0 top-[-1px] w-full object-cover"
+        />
+        <div className="mx-auto flex w-[1000px] items-end gap-40 pb-28 pt-[140px]">
+          <p className="text-[55px] font-bold leading-[60px] tracking-[1.2px] text-white">
+            Start using Popwork with your team today
+          </p>
+          <div>
+            <Email variant="dark" />
+          </div>
+        </div>
       </section>
     </main>
   );
