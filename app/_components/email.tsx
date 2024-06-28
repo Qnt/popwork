@@ -1,4 +1,10 @@
-export default function Email() {
+export default function Email({
+  variant = "light",
+}: {
+  variant?: "light" | "dark";
+}) {
+  const bgColor = variant === "light" ? "bg-white/85" : "bg-white/40";
+  const textColor = variant === "light" ? "text-primary" : "text-white";
   return (
     <form className="w-[400px]">
       <label htmlFor="email" className="sr-only">
@@ -10,7 +16,7 @@ export default function Email() {
           id="email"
           type="email"
           placeholder="yourname@company.com"
-          className="w-full rounded-2xl border border-white/40 bg-white/85 px-[26px] py-[18px] text-lg leading-3 shadow-[0px_4px_16px_0px_rgba(55,53,40,0.15)]"
+          className={`w-full rounded-2xl border ${variant === "dark" && "placeholder:text-white/70"} border-white/40 ${bgColor} px-[26px] py-[18px] text-lg leading-3 shadow-[0px_4px_16px_0px_rgba(55,53,40,0.15)]`}
         />
 
         <button
@@ -20,7 +26,7 @@ export default function Email() {
           Try it now
         </button>
       </div>
-      <p className="mt-4 text-center text-xs leading-3">
+      <p className={`mt-4 text-center text-xs leading-3 ${textColor}`}>
         Free 30-days trial, no credit card required
       </p>
     </form>
