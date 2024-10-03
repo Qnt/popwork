@@ -52,7 +52,7 @@ export default function Home() {
   return (
     <>
       <main className="flex flex-col">
-        <section className="flex flex-col items-center justify-center bg-hero-pattern bg-cover bg-[50%_100%] bg-no-repeat">
+        <section className="flex flex-col items-center justify-center">
           <Header />
           <div className="flex flex-col items-center justify-center text-center">
             <h1 className="mt-[72px] w-[969px] text-6xl font-bold leading-[72px] tracking-[0.8px]">

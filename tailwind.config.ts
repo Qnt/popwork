@@ -19,9 +19,6 @@ const config: Config = {
         card: "0px 4px 16px 0px #673F1833",
         message: "0px 4px 16px 0px #9A5E2426",
       },
-      backgroundImage: {
-        "hero-pattern": "url('@/app/assets/patterns/hero-pattern.svg')",
-      },
       keyframes: {
         ticker: {
           "0%": {
